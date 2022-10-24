@@ -187,10 +187,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-10-23 19:19:50 / 修改时间：19:38:23" itemprop="dateCreated datePublished" datetime="2022-10-23T19:19:50+08:00">2022-10-23</time>
+              <time title="创建时间：2022-10-23 19:19:50" itemprop="dateCreated datePublished" datetime="2022-10-23T19:19:50+08:00">2022-10-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-24 22:48:47" itemprop="dateModified" datetime="2022-10-24T22:48:47+08:00">2022-10-24</time>
+              </span>
 
           
 
@@ -203,26 +209,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="1-分支"><a href="#1-分支" class="headerlink" title="1.分支"></a>1.分支</h1><h2 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h2><ol>
-<li>git pull origin master ，在master分支下，保证当前代码与线上同步，是最新的<br>  a. master 是以前 Github 上的默认主分支，现在已经更换为 main</li>
-<li>git branch &lt;分支名&gt; ，新建分支。</li>
-<li>git checkout &lt;分支名&gt;，切换 到新建的分支上，再进行下一步。</li>
-<li>git push origin &lt;分支名&gt; ,把本地分支推到远端，让远端也有一个你的分支，用来后面提交你的代码。</li>
-<li>新建分支并切换到该分支：git checkout -b &lt;分支名&gt;</li>
-</ol>
-<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><ol>
-<li>删除本地分支 ( 切换到master分支之后再删除 )  git branch -d &lt;分支名&gt;</li>
-<li>删除远端分支  git push origin –delete &lt;分支名&gt;</li>
-</ol>
-<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><p>如果你基于主分支master新建了分支dev，再基于dev分支新建了一个分支test，在test分支开发完成后，需要将test合并到dev分支上。此时，先用git branch 查看自己在哪个分支上，然后git checkout dev(切换到需要合并的分支上)，最后git merge test（在dev分支上执行这句，意思是将test合并到dev分支上）</p>
-<h2 id="分支命名"><a href="#分支命名" class="headerlink" title="分支命名"></a>分支命名</h2><ol>
-<li>master 分支<br>  a. 主分支，也是用于部署生产环境的分支，所有提供给用户使用的正式版本，都在这个主分支上发布。为确保 master 分支稳定性， master 分支一般由 develop 以及 hotfix 分支合并，任何时间都不能直接修改代码。</li>
-<li>develop 分支<br>  a. 开发分支，始终保持最新完成以及 bug 修复后的代码，一般开发的新功能时，feature 分支都是基于 develop 分支下创建的。<br>  b. 如果想正式对外发布，就在 master 分支上，对 develop 分支进行”合并”（merge）。</li>
-<li>feature 分支<br>  a. 开发新功能时，以 develop 为基础创建 feature 分支<br>  b. 分支命名: feature&#x2F; 开头的为特性分支</li>
-<li>release 分支<br>  a. 预上线分支，发布提测阶段，会 release 分支代码为基准提测。当有一组 feature 开发完成，首先会合并到 develop 分支，进入提测时会创建 release 分支。<br>  b. 如果测试过程中若存在 bug 需要修复，则直接由开发者在 release 分支修复并提交。当测试完成之后，合并 release 分支到 master 和 develop 分支，此时 master 为最新代码，用作上线。<br>  c. </li>
-<li>hotfix 分支<br>  a. 分支命名: hotfix&#x2F; 开头的为修复分支，它的命名规则与 feature 分支类似。线上出现紧急问题时，需要及时修复，以 master 分支为基线，创建 hotfix 分支，修复完成后，需要合并到 master 分支和 develop 分支。<br>  b.</li>
-</ol>
-
+          <h1 id="1-分支"><a href="#1-分支" class="headerlink" title="1.分支"></a>1.分支</h1><h2 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/10/23/git/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
