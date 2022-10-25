@@ -30,9 +30,9 @@
 <meta property="og:description" content="1.分支新建分支 git pull origin master ，在master分支下，保证当前代码与线上同步，是最新的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/.com//1.png">
-<meta property="og:image" content="http://example.com/.com//2.png">
+<meta property="og:image" content="http://example.com/.com//10/23/git/2.png">
 <meta property="article:published_time" content="2022-10-23T11:19:50.000Z">
-<meta property="article:modified_time" content="2022-10-25T15:21:24.766Z">
+<meta property="article:modified_time" content="2022-10-25T15:47:12.101Z">
 <meta property="article:author" content="飞飞帅傅">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/.com//1.png">
@@ -202,7 +202,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-25 23:21:24" itemprop="dateModified" datetime="2022-10-25T23:21:24+08:00">2022-10-25</time>
+                <time title="修改时间：2022-10-25 23:47:12" itemprop="dateModified" datetime="2022-10-25T23:47:12+08:00">2022-10-25</time>
               </span>
 
           
@@ -234,7 +234,7 @@
 <li>develop 分支<br>  a. 开发分支，始终保持最新完成以及 bug 修复后的代码，一般开发的新功能时，feature 分支都是基于 develop 分支下创建的。<br>  b. 如果想正式对外发布，就在 master 分支上，对 develop 分支进行”合并”（merge）。</li>
 <li>feature 分支<br>  a. 开发新功能时，以 develop 为基础创建 feature 分支<br>  b. 分支命名: feature&#x2F; 开头的为特性分支</li>
 <li>release 分支<br>  a. 预上线分支，发布提测阶段，会 release 分支代码为基准提测。当有一组 feature 开发完成，首先会合并到 develop 分支，进入提测时会创建 release 分支。<br>  b. 如果测试过程中若存在 bug 需要修复，则直接由开发者在 release 分支修复并提交。当测试完成之后，合并 release 分支到 master 和 develop 分支，此时 master 为最新代码，用作上线。<br>  c. <img src="/.com//1.png" alt="1.png"></li>
-<li>hotfix 分支<br>  a. 分支命名: hotfix&#x2F; 开头的为修复分支，它的命名规则与 feature 分支类似。线上出现紧急问题时，需要及时修复，以 master 分支为基线，创建 hotfix 分支，修复完成后，需要合并到 master 分支和 develop 分支。<br>  b. <img src="/.com//2.png" alt="2.png"></li>
+<li>hotfix 分支<br>  a. 分支命名: hotfix&#x2F; 开头的为修复分支，它的命名规则与 feature 分支类似。线上出现紧急问题时，需要及时修复，以 master 分支为基线，创建 hotfix 分支，修复完成后，需要合并到 master 分支和 develop 分支。<br>  b. <img src="/.com//10/23/git/2.png" alt="2.png"></li>
 </ol>
 <h2 id="2-提交代码"><a href="#2-提交代码" class="headerlink" title="2. 提交代码"></a>2. 提交代码</h2><ol>
 <li><code>git status</code>   查看改变的文件</li>
