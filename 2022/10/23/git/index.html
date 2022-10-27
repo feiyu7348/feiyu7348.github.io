@@ -452,8 +452,8 @@ git pull origin master ，在master分支下，保证当前代码与线上同步
 <li><code>git reset HEAD XXX/XXX/XXX.js</code> 就是对某个文件进行撤销了</li>
 </ol>
 <h3 id="撤销-git-commit-m-39-本次修改说明-39"><a href="#撤销-git-commit-m-39-本次修改说明-39" class="headerlink" title="撤销 git commit -m '本次修改说明'"></a>撤销 <code>git commit -m '本次修改说明'</code></h3><ol>
-<li><code>git reset --soft HEAD^</code>这样就成功的撤销了你的commit。注意，仅仅是撤回commit操作，写的代码仍然保留。<br>  a. HEAD^的意思是上一个版本，也可以写成HEAD<del>1<br>  b. 如果进行了2次commit，想都撤回，可以使用HEAD</del>2</li>
-<li>参数：<br>  a. –mixed意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作，这个为默认参数，<code>git reset --mixed HEAD^</code> 和 <code>git reset HEAD^</code> 效果是一样的。<br>  b. –soft 不删除工作空间改动代码，撤销commit，不撤销git add .<br>  c. -hard 删除工作空间改动代码，撤销commit，撤销git add .，注意完成这个操作后，就恢复到了上一次的commit状态。<br>  d. 如果commit注释写错了，只是想改一下注释，只需要<code>git commit --amend</code>，此时会进入默认vim编辑器，修改注释完毕后保存就好了。</li>
+<li><code>git reset --soft HEAD^</code>这样就成功的撤销了你的commit。注意，仅仅是撤回commit操作，写的代码仍然保留。<br>  a. HEAD^的意思是上一个版本，也可以写成HEAD~1<br>  b. 如果进行了2次commit，想都撤回，可以使用HEAD~2</li>
+<li>参数：<br>  a. –mixed意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作，这个为默认参数，<code>git reset --mixed HEAD^</code> 和 <code>git reset HEAD^</code> 效果是一样的。<br>  b. –soft 不删除工作空间改动代码，撤销commit，不撤销<code>git add .</code><br>  c. -hard 删除工作空间改动代码，撤销commit，撤销<code>git add .</code>，注意完成这个操作后，就恢复到了上一次的commit状态。<br>  d. 如果commit注释写错了，只是想改一下注释，只需要<code>git commit --amend</code>，此时会进入默认vim编辑器，修改注释完毕后保存就好了。</li>
 </ol>
 
                 
@@ -854,7 +854,7 @@ cilium笔记
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2022</span>
+                <span id="year">2022</span>
             
             <a href="/about" target="_blank">飞飞帅傅</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
