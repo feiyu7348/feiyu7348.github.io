@@ -6,7 +6,7 @@
   <link href="http://feiyu7348.github.io/atom.xml" rel="self"/>
   
   <link href="http://feiyu7348.github.io/"/>
-  <updated>2022-10-27T15:51:38.726Z</updated>
+  <updated>2022-10-30T15:19:19.416Z</updated>
   <id>http://feiyu7348.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://feiyu7348.github.io/2022/10/25/cilium/"/>
     <id>http://feiyu7348.github.io/2022/10/25/cilium/</id>
     <published>2022-10-25T15:29:45.000Z</published>
-    <updated>2022-10-27T15:51:38.726Z</updated>
+    <updated>2022-10-30T15:19:19.416Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -29,8 +29,30 @@
     
     
     
+    <category term="云计算 - cilium" scheme="http://feiyu7348.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97-cilium/"/>
+    
     
     <category term="cilium" scheme="http://feiyu7348.github.io/tags/cilium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://feiyu7348.github.io/2022/10/25/Linux/"/>
+    <id>http://feiyu7348.github.io/2022/10/25/Linux/</id>
+    <published>2022-10-25T15:29:45.000Z</published>
+    <updated>2022-10-30T15:12:06.991Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Linux报错笔记&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Linux -" scheme="http://feiyu7348.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://feiyu7348.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -39,14 +61,17 @@
     <link href="http://feiyu7348.github.io/2022/10/23/git/"/>
     <id>http://feiyu7348.github.io/2022/10/23/git/</id>
     <published>2022-10-23T11:19:50.000Z</published>
-    <updated>2022-10-29T08:34:39.452Z</updated>
+    <updated>2022-10-30T15:18:34.118Z</updated>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4&quot;&gt;https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;git笔记 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语雀版本 &lt;a href=&quot;https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4&quot;&gt;https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
+    
+    <category term="git" scheme="http://feiyu7348.github.io/categories/git/"/>
     
     
     <category term="git" scheme="http://feiyu7348.github.io/tags/git/"/>
