@@ -5,15 +5,15 @@
     
     <entry>
       <title>cilium</title>
-      <link href="/2022/10/25/cilium/"/>
-      <url>/2022/10/25/cilium/</url>
+      <link href="/2022/10/29/cilium/"/>
+      <url>/2022/10/29/cilium/</url>
       
         <content type="html"><![CDATA[<blockquote><p>cilium笔记<br> <span id="more"></span><br>123</p></blockquote>]]></content>
       
       
       <categories>
           
-          <category> 云计算 - cilium </category>
+          <category> 云计算 </category>
           
       </categories>
       
@@ -21,6 +21,8 @@
         <tags>
             
             <tag> cilium </tag>
+            
+            <tag> CNI </tag>
             
         </tags>
       
@@ -38,7 +40,7 @@
       
       <categories>
           
-          <category> Linux - </category>
+          <category> Linux </category>
           
       </categories>
       

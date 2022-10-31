@@ -6,7 +6,7 @@
   <link href="http://feiyu7348.github.io/atom.xml" rel="self"/>
   
   <link href="http://feiyu7348.github.io/"/>
-  <updated>2022-10-30T15:19:19.416Z</updated>
+  <updated>2022-10-31T15:29:28.061Z</updated>
   <id>http://feiyu7348.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>cilium</title>
-    <link href="http://feiyu7348.github.io/2022/10/25/cilium/"/>
-    <id>http://feiyu7348.github.io/2022/10/25/cilium/</id>
-    <published>2022-10-25T15:29:45.000Z</published>
-    <updated>2022-10-30T15:19:19.416Z</updated>
+    <link href="http://feiyu7348.github.io/2022/10/29/cilium/"/>
+    <id>http://feiyu7348.github.io/2022/10/29/cilium/</id>
+    <published>2022-10-29T15:29:45.000Z</published>
+    <updated>2022-10-31T15:29:28.061Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -29,10 +29,12 @@
     
     
     
-    <category term="云计算 - cilium" scheme="http://feiyu7348.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97-cilium/"/>
+    <category term="云计算" scheme="http://feiyu7348.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
     
     <category term="cilium" scheme="http://feiyu7348.github.io/tags/cilium/"/>
+    
+    <category term="CNI" scheme="http://feiyu7348.github.io/tags/CNI/"/>
     
   </entry>
   
@@ -41,7 +43,7 @@
     <link href="http://feiyu7348.github.io/2022/10/25/linux/"/>
     <id>http://feiyu7348.github.io/2022/10/25/linux/</id>
     <published>2022-10-25T15:29:45.000Z</published>
-    <updated>2022-10-30T15:12:06.991Z</updated>
+    <updated>2022-10-31T15:11:32.836Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -49,7 +51,7 @@
     
     
     
-    <category term="Linux -" scheme="http://feiyu7348.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://feiyu7348.github.io/categories/Linux/"/>
     
     
     <category term="Linux" scheme="http://feiyu7348.github.io/tags/Linux/"/>
