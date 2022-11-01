@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>route</title>
+      <link href="/2022/11/01/route/"/>
+      <url>/2022/11/01/route/</url>
+      
+        <content type="html"><![CDATA[<p>静态路由、策略路由、虚拟路由</p><span id="more"></span><p>虚拟路由</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机网路 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 路由 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>cilium</title>
       <link href="/2022/10/29/cilium/"/>
       <url>/2022/10/29/cilium/</url>
@@ -56,23 +81,23 @@
     
     
     <entry>
-      <title>git</title>
+      <title>Git</title>
       <link href="/2022/10/23/git/"/>
       <url>/2022/10/23/git/</url>
       
-        <content type="html"><![CDATA[<p>git笔记 </p><blockquote><p>语雀版本 <a href="https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4">https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4</a></p></blockquote> <span id="more"></span><h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h3 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h3><ol><li><code>git pull origin master</code> ，在master分支下，保证当前代码与线上同步，是最新的<br>  a. master 是以前 Github 上的默认主分支，现在已经更换为 main</li><li><code>git branch &lt;分支名&gt;</code>，新建分支。</li><li><code>git checkout &lt;分支名&gt;</code>，切换 到新建的分支上，再进行下一步。</li><li><code>git push origin &lt;分支名&gt;</code> ,把本地分支推到远端，让远端也有一个你的分支，用来后面提交你的代码。</li><li>新建分支并切换到该分支：<code>git checkout -b &lt;分支名&gt;</code></li></ol><h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><ol><li>删除本地分支 ( 切换到master分支之后再删除 ) <code>git branch -d &lt;分支名&gt;</code></li><li>删除远端分支 <code>git push origin --delete &lt;分支名&gt;</code></li></ol><h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p>如果你基于主分支master新建了分支dev，再基于dev分支新建了一个分支test，在test分支开发完成后，需要将test合并到dev分支上。此时，先用<code>git branch</code> 查看自己在哪个分支上，然后g<code>it checkout dev(切换到需要合并的分支上)</code>，最后<code>git merge test</code>（在dev分支上执行这句，意思是将test合并到dev分支上）</p><h3 id="分支命名"><a href="#分支命名" class="headerlink" title="分支命名"></a>分支命名</h3><ol><li>master 分支<br>  a. 主分支，也是用于部署生产环境的分支，所有提供给用户使用的正式版本，都在这个主分支上发布。为确保 master 分支稳定性， master 分支一般由 develop 以及 hotfix 分支合并，任何时间都不能直接修改代码。</li><li>develop 分支<br>  a. 开发分支，始终保持最新完成以及 bug 修复后的代码，一般开发的新功能时，feature 分支都是基于 develop 分支下创建的。<br>  b. 如果想正式对外发布，就在 master 分支上，对 develop 分支进行”合并”（merge）。</li><li>feature 分支<br>  a. 开发新功能时，以 develop 为基础创建 feature 分支<br>  b. 分支命名: feature/ 开头的为特性分支</li><li>release 分支<br>  a. 预上线分支，发布提测阶段，会 release 分支代码为基准提测。当有一组 feature 开发完成，首先会合并到 develop 分支，进入提测时会创建 release 分支。<br>  b. 如果测试过程中若存在 bug 需要修复，则直接由开发者在 release 分支修复并提交。当测试完成之后，合并 release 分支到 master 和 develop 分支，此时 master 为最新代码，用作上线。<br>  <img src="/2022/10/23/git/release.png" alt="release"></li><li>hotfix 分支<br>  a. 分支命名: hotfix/ 开头的为修复分支，它的命名规则与 feature 分支类似。线上出现紧急问题时，需要及时修复，以 master 分支为基线，创建 hotfix 分支，修复完成后，需要合并到 master 分支和 develop 分支。<br>  <img src="/2022/10/23/git/hotfix.png" alt="hotfix"></li></ol><h2 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h2><ol><li><code>git status</code>   查看改变的文件</li><li><code>git add .</code>  添加到缓存区</li><li><code>git commit -m ‘本次提交的描述’</code><br>  a. Commit messages格式要求<br> ⅰ. 标题：50个字符以内，描述主要变更内容<br> ⅱ. 主体内容：更详细的说明文本，建议72个字符以内。需要描述的信息包括:<ol><li>为什么这个变更是必须的? 它可能是用来修复一个bug，增加一个feature，提升性能、可靠性、稳定性等等</li><li>他如何解决这个问题? 具体描述解决问题的步骤</li><li>是否存在副作用、风险?<br> ⅲ. 如果需要的话可以添加一个链接到issue地址或者其它文档</li></ol></li><li><code>git push origin &lt;分支名&gt;</code>   push是从本地向远端推代码，也就是把自己写的代码提交上去<br>  a. 执行完上一步，有可能报错，此时淡定，不认识英语的话在线翻译是干嘛的，大多数时候提示你，本地落后于远端，（意思就是远端比本地多了一些代码，为什么会出现这种情况呢，肯定是你跟别人共用一个分支，他提交了一段代码到远端，所以导致你的本地落后于远端）既然落后了，那就把他更新成最新的<br>  <img src="/2022/10/23/git/push.png" alt="push"><br>  b. 本地和远程改了同一段代码，手动改掉冲突，留下一个再进行提交<br>  <img src="/2022/10/23/git/pull.png" alt="pull"></li><li><code>git pull --rebase origin &lt;远程分支名&gt;</code>，如：<code>git pull —rebase origin master</code></li><li>先解决冲突，然后执行 <code>git add .</code></li><li>解决完冲突之后   <code>git rebase —continue</code></li><li>此时再提交你的代码 <code>git push origin &lt;分支名&gt;</code></li><li>此时若显示，当前分支落后于master分支，则需要强推，<code>git push -f origin &lt;分支名&gt;</code>，若不报错，则rebase成功。</li></ol><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><ol><li><code>git log --oneline</code><br>  <img src="/2022/10/23/git/log.png" alt="log"></li><li><code>git log --graph</code> 查看分支图</li></ol><h2 id="撤回操作"><a href="#撤回操作" class="headerlink" title="撤回操作"></a>撤回操作</h2><h3 id="撤销-git-add"><a href="#撤销-git-add" class="headerlink" title="撤销 git add"></a>撤销 <code>git add</code></h3><ol><li><code>git reset HEAD</code> 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了</li><li><code>git reset HEAD XXX/XXX/XXX.js</code> 就是对某个文件进行撤销了</li></ol><h3 id="撤销-git-commit-m-39-本次修改说明-39"><a href="#撤销-git-commit-m-39-本次修改说明-39" class="headerlink" title="撤销 git commit -m '本次修改说明'"></a>撤销 <code>git commit -m '本次修改说明'</code></h3><ol><li><code>git reset --soft HEAD^</code>这样就成功的撤销了你的commit。注意，仅仅是撤回commit操作，写的代码仍然保留。<br>  a. HEAD^的意思是上一个版本，也可以写成HEAD~1<br>  b. 如果进行了2次commit，想都撤回，可以使用HEAD~2</li><li>参数：<br>  a. –mixed意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作，这个为默认参数，<code>git reset --mixed HEAD^</code> 和 <code>git reset HEAD^</code> 效果是一样的。<br>  b. –soft 不删除工作空间改动代码，撤销commit，不撤销<code>git add .</code><br>  c. -hard 删除工作空间改动代码，撤销commit，撤销<code>git add .</code>，注意完成这个操作后，就恢复到了上一次的commit状态。<br>  d. 如果commit注释写错了，只是想改一下注释，只需要<code>git commit --amend</code>，此时会进入默认vim编辑器，修改注释完毕后保存就好了。</li></ol>]]></content>
+        <content type="html"><![CDATA[<p>Git笔记 </p><blockquote><p>语雀版本 <a href="https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4">https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4</a></p></blockquote> <span id="more"></span><h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h3 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h3><ol><li><code>git pull origin master</code> ，在master分支下，保证当前代码与线上同步，是最新的<br>  a. master 是以前 Github 上的默认主分支，现在已经更换为 main</li><li><code>git branch &lt;分支名&gt;</code>，新建分支。</li><li><code>git checkout &lt;分支名&gt;</code>，切换 到新建的分支上，再进行下一步。</li><li><code>git push origin &lt;分支名&gt;</code> ,把本地分支推到远端，让远端也有一个你的分支，用来后面提交你的代码。</li><li>新建分支并切换到该分支：<code>git checkout -b &lt;分支名&gt;</code></li></ol><h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><ol><li>删除本地分支 ( 切换到master分支之后再删除 ) <code>git branch -d &lt;分支名&gt;</code></li><li>删除远端分支 <code>git push origin --delete &lt;分支名&gt;</code></li></ol><h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p>如果你基于主分支master新建了分支dev，再基于dev分支新建了一个分支test，在test分支开发完成后，需要将test合并到dev分支上。此时，先用<code>git branch</code> 查看自己在哪个分支上，然后g<code>it checkout dev(切换到需要合并的分支上)</code>，最后<code>git merge test</code>（在dev分支上执行这句，意思是将test合并到dev分支上）</p><h3 id="分支命名"><a href="#分支命名" class="headerlink" title="分支命名"></a>分支命名</h3><ol><li>master 分支<br>  a. 主分支，也是用于部署生产环境的分支，所有提供给用户使用的正式版本，都在这个主分支上发布。为确保 master 分支稳定性， master 分支一般由 develop 以及 hotfix 分支合并，任何时间都不能直接修改代码。</li><li>develop 分支<br>  a. 开发分支，始终保持最新完成以及 bug 修复后的代码，一般开发的新功能时，feature 分支都是基于 develop 分支下创建的。<br>  b. 如果想正式对外发布，就在 master 分支上，对 develop 分支进行”合并”（merge）。</li><li>feature 分支<br>  a. 开发新功能时，以 develop 为基础创建 feature 分支<br>  b. 分支命名: feature/ 开头的为特性分支</li><li>release 分支<br>  a. 预上线分支，发布提测阶段，会 release 分支代码为基准提测。当有一组 feature 开发完成，首先会合并到 develop 分支，进入提测时会创建 release 分支。<br>  b. 如果测试过程中若存在 bug 需要修复，则直接由开发者在 release 分支修复并提交。当测试完成之后，合并 release 分支到 master 和 develop 分支，此时 master 为最新代码，用作上线。<br>  <img src="/2022/10/23/git/release.png" alt="release"></li><li>hotfix 分支<br>  a. 分支命名: hotfix/ 开头的为修复分支，它的命名规则与 feature 分支类似。线上出现紧急问题时，需要及时修复，以 master 分支为基线，创建 hotfix 分支，修复完成后，需要合并到 master 分支和 develop 分支。<br>  <img src="/2022/10/23/git/hotfix.png" alt="hotfix"></li></ol><h2 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h2><ol><li><code>git status</code>   查看改变的文件</li><li><code>git add .</code>  添加到缓存区</li><li><code>git commit -m ‘本次提交的描述’</code><br>  a. Commit messages格式要求<br> ⅰ. 标题：50个字符以内，描述主要变更内容<br> ⅱ. 主体内容：更详细的说明文本，建议72个字符以内。需要描述的信息包括:<ol><li>为什么这个变更是必须的? 它可能是用来修复一个bug，增加一个feature，提升性能、可靠性、稳定性等等</li><li>他如何解决这个问题? 具体描述解决问题的步骤</li><li>是否存在副作用、风险?<br> ⅲ. 如果需要的话可以添加一个链接到issue地址或者其它文档</li></ol></li><li><code>git push origin &lt;分支名&gt;</code>   push是从本地向远端推代码，也就是把自己写的代码提交上去<br>  a. 执行完上一步，有可能报错，此时淡定，不认识英语的话在线翻译是干嘛的，大多数时候提示你，本地落后于远端，（意思就是远端比本地多了一些代码，为什么会出现这种情况呢，肯定是你跟别人共用一个分支，他提交了一段代码到远端，所以导致你的本地落后于远端）既然落后了，那就把他更新成最新的<br>  <img src="/2022/10/23/git/push.png" alt="push"><br>  b. 本地和远程改了同一段代码，手动改掉冲突，留下一个再进行提交<br>  <img src="/2022/10/23/git/pull.png" alt="pull"></li><li><code>git pull --rebase origin &lt;远程分支名&gt;</code>，如：<code>git pull —rebase origin master</code></li><li>先解决冲突，然后执行 <code>git add .</code></li><li>解决完冲突之后   <code>git rebase —continue</code></li><li>此时再提交你的代码 <code>git push origin &lt;分支名&gt;</code></li><li>此时若显示，当前分支落后于master分支，则需要强推，<code>git push -f origin &lt;分支名&gt;</code>，若不报错，则rebase成功。</li></ol><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><ol><li><code>git log --oneline</code><br>  <img src="/2022/10/23/git/log.png" alt="log"></li><li><code>git log --graph</code> 查看分支图</li></ol><h2 id="撤回操作"><a href="#撤回操作" class="headerlink" title="撤回操作"></a>撤回操作</h2><h3 id="撤销-git-add"><a href="#撤销-git-add" class="headerlink" title="撤销 git add"></a>撤销 <code>git add</code></h3><ol><li><code>git reset HEAD</code> 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了</li><li><code>git reset HEAD XXX/XXX/XXX.js</code> 就是对某个文件进行撤销了</li></ol><h3 id="撤销-git-commit-m-39-本次修改说明-39"><a href="#撤销-git-commit-m-39-本次修改说明-39" class="headerlink" title="撤销 git commit -m '本次修改说明'"></a>撤销 <code>git commit -m '本次修改说明'</code></h3><ol><li><code>git reset --soft HEAD^</code>这样就成功的撤销了你的commit。注意，仅仅是撤回commit操作，写的代码仍然保留。<br>  a. HEAD^的意思是上一个版本，也可以写成HEAD~1<br>  b. 如果进行了2次commit，想都撤回，可以使用HEAD~2</li><li>参数：<br>  a. –mixed意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作，这个为默认参数，<code>git reset --mixed HEAD^</code> 和 <code>git reset HEAD^</code> 效果是一样的。<br>  b. –soft 不删除工作空间改动代码，撤销commit，不撤销<code>git add .</code><br>  c. -hard 删除工作空间改动代码，撤销commit，撤销<code>git add .</code>，注意完成这个操作后，就恢复到了上一次的commit状态。<br>  d. 如果commit注释写错了，只是想改一下注释，只需要<code>git commit --amend</code>，此时会进入默认vim编辑器，修改注释完毕后保存就好了。</li></ol>]]></content>
       
       
       <categories>
           
-          <category> git </category>
+          <category> Git </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> git </tag>
+            <tag> Git </tag>
             
         </tags>
       
