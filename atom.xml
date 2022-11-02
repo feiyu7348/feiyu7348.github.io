@@ -6,7 +6,7 @@
   <link href="http://feiyu7348.github.io/atom.xml" rel="self"/>
   
   <link href="http://feiyu7348.github.io/"/>
-  <updated>2022-11-01T15:54:31.844Z</updated>
+  <updated>2022-11-02T14:52:18.900Z</updated>
   <id>http://feiyu7348.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python类中的方法</title>
+    <link href="http://feiyu7348.github.io/2022/11/02/python-lei-zhong-de-fang-fa/"/>
+    <id>http://feiyu7348.github.io/2022/11/02/python-lei-zhong-de-fang-fa/</id>
+    <published>2022-11-02T14:48:06.000Z</published>
+    <updated>2022-11-02T14:52:18.900Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;静态方法、类方法、属性方法&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://feiyu7348.github.io/categories/python/"/>
+    
+    
+    <category term="python类" scheme="http://feiyu7348.github.io/tags/python%E7%B1%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>route</title>

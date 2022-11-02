@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>python类中的方法</title>
+      <link href="/2022/11/02/python-lei-zhong-de-fang-fa/"/>
+      <url>/2022/11/02/python-lei-zhong-de-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>静态方法、类方法、属性方法</p><span id="more"></span><h2 id="staticmethod"><a href="#staticmethod" class="headerlink" title="@staticmethod"></a>@staticmethod</h2><p>staticmethod用于修饰类中的方法,使其可以在<strong>不创建类实例</strong>的情况下调用方法，这样做的好处是执行效率比较高。当然，也可以像一般的方法一样用实例调用该方法。该方法一般被称为静态方法。静态方法<strong>不可以引用类中的属性或方法</strong>，其参数列表也<strong>不需要约定的默认参数self</strong>。我个人觉得，静态方法就是类对外部函数的封装，有助于优化代码结构和提高程序的可读性。当然了，被封装的方法应该尽可能的和封装它的类的功能相匹配。</p><h2 id="property"><a href="#property" class="headerlink" title="@property"></a>@property</h2><p>使用@property装饰器来创建<strong>只读属性</strong>，@property装饰器会将<strong>方法</strong>转换为相同名称的<strong>只读属性</strong>,可以与所定义的属性配合使用，这样可以防止属性被修改。</p><h2 id="classmethod"><a href="#classmethod" class="headerlink" title="@classmethod"></a>@classmethod</h2><p>classmethod 修饰符对应的函数<strong>不需要实例化，不需要 self 参数</strong>，但<strong>第一个参数需要是表示自身类的 cls 参数</strong>，可以来调用类的属性，类的方法，实例化对象等。<br>返回函数的类方法。<br>可以用来为一个类创建一些预处理的实例。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python类 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>route</title>
       <link href="/2022/11/01/route/"/>
       <url>/2022/11/01/route/</url>
