@@ -29,11 +29,11 @@
     
     
     <entry>
-      <title>route</title>
-      <link href="/2022/11/01/route/"/>
-      <url>/2022/11/01/route/</url>
+      <title>路由</title>
+      <link href="/2022/11/01/lu-you/"/>
+      <url>/2022/11/01/lu-you/</url>
       
-        <content type="html"><![CDATA[<p>静态路由、策略路由、虚拟路由</p><span id="more"></span><p>虚拟路由</p>]]></content>
+        <content type="html"><![CDATA[<p>静态路由、策略路由、虚拟路由</p><span id="more"></span><h2 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a>静态路由</h2><p>静态路由是由用户管理员在路由器中手动配置的固定路由</p><h2 id="策略路由"><a href="#策略路由" class="headerlink" title="策略路由"></a>策略路由</h2><p>策略路由简称PBR（Policy-Based Routing），是针对某种数据包，直接制定的选路策略。</p><h2 id="虚拟路由"><a href="#虚拟路由" class="headerlink" title="虚拟路由"></a>虚拟路由</h2><p>虚拟路由器（vRouter）是一种软件功能，它在软件中复制基于硬件的第3层Internet协议（IP）路由的功能</p>]]></content>
       
       
       <categories>
