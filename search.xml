@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>grpc.md</title>
+      <link href="/2023/04/04/grpc/"/>
+      <url>/2023/04/04/grpc/</url>
+      
+        <content type="html"><![CDATA[<p>grpc介绍</p><span id="more"></span><p>gRPC是一个现代的开源高性能远程过程调用(RPC)框架，可以在任何环境中运行。它可以有效地连接数据中心内和跨数据中心的服务，支持负载均衡、跟踪、健康检查和身份验证。它也适用于分布式计算，将设备、移动应用程序和浏览器连接到后端服务–</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Golang </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python类中的方法</title>
       <link href="/2022/11/02/python-lei-zhong-de-fang-fa/"/>
       <url>/2022/11/02/python-lei-zhong-de-fang-fa/</url>
