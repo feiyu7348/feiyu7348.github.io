@@ -6,7 +6,7 @@
   <link href="http://feiyu7348.github.io/atom.xml" rel="self"/>
   
   <link href="http://feiyu7348.github.io/"/>
-  <updated>2023-04-07T08:27:11.123Z</updated>
+  <updated>2023-04-07T08:32:03.774Z</updated>
   <id>http://feiyu7348.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>grpc.md</title>
+    <title>grpc</title>
     <link href="http://feiyu7348.github.io/2023/04/04/grpc/"/>
     <id>http://feiyu7348.github.io/2023/04/04/grpc/</id>
     <published>2023-04-04T09:50:22.000Z</published>
-    <updated>2023-04-07T08:27:11.123Z</updated>
+    <updated>2023-04-07T08:32:03.774Z</updated>
     
     
     <summary type="html">&lt;p&gt;grpc介绍&lt;/p&gt;</summary>
@@ -112,28 +112,6 @@
     
     
     <category term="Linux" scheme="http://feiyu7348.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git</title>
-    <link href="http://feiyu7348.github.io/2022/10/23/git/"/>
-    <id>http://feiyu7348.github.io/2022/10/23/git/</id>
-    <published>2022-10-23T11:19:50.000Z</published>
-    <updated>2022-11-16T13:39:14.108Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Git笔记 &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;语雀版本 &lt;a href=&quot;https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4&quot;&gt;https://www.yuque.com/feifeishuaifu/xuwmux/qcu1z4&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="Git" scheme="http://feiyu7348.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="http://feiyu7348.github.io/tags/Git/"/>
     
   </entry>
   
