@@ -7,7 +7,10 @@
     <meta name="keywords" content="grpc.md, 程序员">
     <meta name="description" content="grpc介绍
 
-gRPC是一个现代的开源高性能远程过程调用(RPC)框架，可以在任何环境中运行。它可以有效地连接数据中心内和跨数据中心的服务，支持负载均衡、跟踪、健康检查和身份验证。它也适用于分布式计算，将设备、移动应用程序和浏览器连接到后">
+
+https://zhuanlan.zhihu.com/p/363672930https://juejin.cn/post/7047885453336248327
+
+gRPC是一个现代的开源高性能远程过程调用(RPC)框架，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -400,21 +403,21 @@ gRPC是一个现代的开源高性能远程过程调用(RPC)框架，可以在�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-04
+                    2023-04-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    103
+                    841
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -439,7 +442,21 @@ gRPC是一个现代的开源高性能远程过程调用(RPC)框架，可以在�
             <div id="articleContent">
                 <p>grpc介绍</p>
 <span id="more"></span>
-<p>gRPC是一个现代的开源高性能远程过程调用(RPC)框架，可以在任何环境中运行。它可以有效地连接数据中心内和跨数据中心的服务，支持负载均衡、跟踪、健康检查和身份验证。它也适用于分布式计算，将设备、移动应用程序和浏览器连接到后端服务–</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/363672930">https://zhuanlan.zhihu.com/p/363672930</a><br><a target="_blank" rel="noopener" href="https://juejin.cn/post/7047885453336248327">https://juejin.cn/post/7047885453336248327</a></p>
+</blockquote>
+<p>gRPC是一个现代的开源高性能远程过程调用(RPC)框架，可以在任何环境中运行。它可以有效地连接数据中心内和跨数据中心的服务，支持负载均衡、跟踪、健康检查和身份验证。它也适用于分布式计算，将设备、移动应用程序和浏览器连接到后端服务</p>
+<h2 id="gRPC-VS-Restful"><a href="#gRPC-VS-Restful" class="headerlink" title="gRPC VS Restful"></a>gRPC VS Restful</h2><p>gRPC和Restful之间的对比，从文档规范、消息编码、传输协议、传输性能、传输形式、浏览器的支持度以及数据的可读性、安全性等方面进行比较。</p>
+<h3 id="文档规范"><a href="#文档规范" class="headerlink" title="文档规范"></a>文档规范</h3><p>gRPC使用proto文件编写接口（API），文档规范比Restful更好，因为proto文件的语法和形式是定死的，所以更为严谨、风格统一清晰；而Restful由于可以使用多种工具进行编写（只要人看得懂就行），每家公司、每个人的攥写风格又各有差异，难免让人觉得比较混乱。</p>
+<h3 id="消息编码"><a href="#消息编码" class="headerlink" title="消息编码"></a>消息编码</h3><p>消息编码这块，gRPC使用protobuf进行消息编码，而Restful一般使用JSON进行编码</p>
+<h3 id="传输协议"><a href="#传输协议" class="headerlink" title="传输协议"></a>传输协议</h3><p>传输协议这块，gRPC使用HTTP/2作为底层传输协议，据说也可替换为其他协议，但目前还未考证；而RestFul则使用HTTP。</p>
+<h3 id="传输性能"><a href="#传输性能" class="headerlink" title="传输性能"></a>传输性能</h3><p>由于gRPC使用protobuf进行消息编码（即序列化），而经protobuf序列化后的消息体积很小（传输内容少，传输相对就快）；再加上HTTP/2协议的加持（HTTP1.1的进一步优化），使得gRPC的传输性能要优于Restful。</p>
+<h3 id="传输形式"><a href="#传输形式" class="headerlink" title="传输形式"></a>传输形式</h3><p>传输形式这块，gRPC最大的优势就是支持流式传输，传输形式具体可以分为四种（unary、client stream、server stream、bidirectional stream），这个后面我们会讲到；而Restful是不支持流式传输的。</p>
+<h3 id="浏览器的支持度"><a href="#浏览器的支持度" class="headerlink" title="浏览器的支持度"></a>浏览器的支持度</h3><p>不知道是不是gRPC发展较晚的原因，目前浏览器对gRPC的支持度并不是很好，而对Restful的支持可谓是密不可分，这也是gRPC的一个劣势，如果后续浏览器对gRPC的支持度越来越高，不知道gRPC有没有干饭Restful的可能呢？</p>
+<h3 id="消息的可读性和安全性"><a href="#消息的可读性和安全性" class="headerlink" title="消息的可读性和安全性"></a>消息的可读性和安全性</h3><p>由于gRPC序列化的数据是二进制，且如果你不知道定义的Request和Response是什么，你几乎是没办法解密的，所以gRPC的安全性也非常高，但随着带来的就是可读性的降低，调试会比较麻烦；而Restful则相反（现在有HTTPS，安全性其实也很高）</p>
+<h3 id="代码的编写"><a href="#代码的编写" class="headerlink" title="代码的编写"></a>代码的编写</h3><p>由于gRPC调用的函数，以及字段名，都是使用stub文件的，所以从某种角度看，代码更不容易出错，联调成本也会比较低，不会出现低级错误，比如字段名写错、写漏。</p>
+<h3 id="gRPC的适用场景"><a href="#gRPC的适用场景" class="headerlink" title="gRPC的适用场景"></a>gRPC的适用场景</h3><p>从上面gRPC和Restful的比较中，我们其实也从侧面了解gRPC的优劣势，也能顺势推断出其应用场景。</p>
+<p><strong>总的来说，gRPC主要用于公司内部的服务调用，性能消耗低，传输效率高，服务治理方便。Restful主要用于对外，比如提供接口给前端调用，提供外部服务给其他人调用等。</strong></p>
 
                 
             </div>
